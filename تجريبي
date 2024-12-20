@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رسالة تنبيه</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            display: none;
+            margin-top: 20px;
+            max-width: 90%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>مرحبًا بك!عند موقع حكيم عالمي</h1>
+    <button onclick="showImages()">اضغط هنا</button>
+    
+    <!-- إضافة 10 صور -->
+    <img id="image1" src="1.jpg" alt="الصورة 1">
+    <img id="image2" src="2.jpg" alt="الصورة 2">
+    <img id="image3" src="3.jpg" alt="الصورة 3">
+    <img id="image4" src="4.jpg" alt="الصورة 4">
+    <img id="image5" src="5.jpg" alt="الصورة 5">
+    <img id="image6" src="6.jpg" alt="الصورة 6">
+    <img id="image7" src="path-to-image7.jpg" alt="الصورة 7">
+    <img id="image8" src="8.jpg" alt="الصورة 8">
+    <img id="image9" src="9.jpg" alt="الصورة 9">
+    <img id="image10" src="hakim.jpg" alt="الصورة 10">
+
+    <script>
+        function showImages() {
+            alert("يجب ان تكون متمدرس في متوسطةعقيد ٦عثمان");
+            // إظهار جميع الصور
+            for (let i = 1; i <= 10; i++) {
+                document.getElementById("image" + i).style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
